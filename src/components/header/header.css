@@ -1,0 +1,23 @@
+body {
+  background-color: #fff;
+}
+
+/* colores del nav */
+.navbar.fixed-top {
+  margin-top: 0;
+}
+.bg-green {
+  background-color: var(--verdeOscuro);
+}
+/* Textos del nav */
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: #ffcc00;
+}
+
+.navbar-brand {
+  color: white;
+}
