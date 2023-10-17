@@ -30,6 +30,7 @@ function Crearuta() {
           </p>
         </div>
       </div>
+      <div className='section-divider'></div>
     </div>
   );
 }
