@@ -7,8 +7,6 @@ import '../header/header.css';
 
 import logoImage from '../../assets/img/Avida.png';
 
-import Login from './Login';
-
 const Header = () => {
   const [showLoginModal, setShowLoginModal] = useState(false);
 
@@ -43,9 +41,7 @@ const Header = () => {
         </Container>
       </Navbar>
 
-      <Modal show={showLoginModal} onHide={handleCloseLoginModal}>
-        <Login />
-      </Modal>
+      <Modal show={showLoginModal} onHide={handleCloseLoginModal}></Modal>
     </div>
   );
 };
