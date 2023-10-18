@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/header/Header';
@@ -11,10 +11,10 @@ import Guia from './components/guia/Guia';
 import Tienda from './components/tienda/Tienda';
 
 function App() {
-  const [count, setCount] = useState(0);
+  const [count, setCount] = React.useState(0);
 
   return (
-    <div>
+    <div className='app-container'>
       <Header />
       <Home />
       <Conecta />

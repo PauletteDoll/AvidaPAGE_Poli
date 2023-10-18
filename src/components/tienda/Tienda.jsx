@@ -14,6 +14,7 @@ function Tienda() {
         />
         <button className='boton-centrado'>Tienda</button>
       </div>
+      <div className='section-divider'></div>
     </div>
   );
 }
