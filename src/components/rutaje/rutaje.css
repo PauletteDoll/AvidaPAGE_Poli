@@ -1,27 +1,37 @@
-/* rutaje.css */
-
-.img-fluid {
-  max-width: 100%;
-  height: auto;
+.tienda-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
 }
 
-.ruta-button {
-  display: block;
-  width: 150px;
-  height: 50px;
-  background-color: var(--verde);
+.imagen-y-botones {
+  position: relative;
+  width: 100%;
+  text-align: center; /* Centrar el contenido dentro del contenedor */
+}
+
+.imagen-tienda {
+  max-width: 100%;
+}
+
+.boton-centrado {
+  position: absolute;
+  top: 50%;
+  left: 25%; /* Ajusta el valor para controlar la posición horizontal del botón */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Centra vertical y horizontalmente el botón */
+  background-color: var(--verde); /* Utiliza la variable de color */
   color: white;
   font-size: 1.2rem;
   text-align: center;
   line-height: 50px;
   border: none;
   border-radius: 5px;
-  margin: 0 auto;
-  margin-top: 20px;
+  width: 150px;
+  height: 50px;
   cursor: pointer;
-}
-
-.section-divider {
-  border: 2px solid #fff;
-  margin: 20px 0;
 }

@@ -8,6 +8,7 @@ import Conecta from './components/conecta/Conecta';
 import Crearuta from './components/crearuta/Crearuta';
 import Rutaje from './components/rutaje/Rutaje';
 import Guia from './components/guia/Guia';
+import Tienda from './components/tienda/Tienda';
 
 function App() {
   const [count, setCount] = useState(0);
@@ -21,6 +22,7 @@ function App() {
       <Rutaje />
       <Guia />
       <Comunidad />
+      <Tienda />
     </div>
   );
 }

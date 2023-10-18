@@ -1,0 +1,30 @@
+@import url(/src/App.css);
+
+.tienda-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.imagen-y-botones {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.imagen-tienda {
+  max-width: 100%;
+}
+
+.boton-centrado {
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  background-color: var(--verde);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+}

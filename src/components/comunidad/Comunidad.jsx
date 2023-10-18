@@ -1,58 +1,54 @@
 import React from 'react';
-import './comunidad.css';
-import Carousel from 'react-bootstrap/Carousel';
+import './Comunidad.css';
 
-import como1 from '../../assets/img/comu1.avif';
-import comu2 from '../../assets/img/comu2.avif';
-import como3 from '../../assets/img/comu3.avif';
+import anima1 from '../../assets/img/canima1.png';
+import anima2 from '../../assets/img/canima2.png';
+import anima3 from '../../assets/img/canima3.png';
+import user1 from '../../assets/img/cuser1.png';
+import user2 from '../../assets/img/cuser2.png';
+import user3 from '../../assets/img/cuser3.png';
 
-const Comunidad = () => {
+function Comunidad() {
   return (
-    <div className='container'>
-      <div className='row'>
-        <div className='col-md-6 widget-container'>
-          {/* Widget de Instagram */}
-          <iframe
-            src='./instagram.html'
-            title='Instagram'
-            width='100%'
-            height='500'
-          />
+    <div className='comunidad-container'>
+      <div className='animal-images'>
+        <div className='animal'>
+          <img src={anima1} alt='Animal 1' />
+          <div className='animal-info'>
+            <img src={user1} alt='Avatar 1' />
+            <div className='nombre-localidad'>
+              <div className='nombre'>Maria L.</div>
+              <div className='localidad'>Parque Bustamante</div>
+            </div>
+          </div>
+          <p>Descripción de Persona 1</p>
         </div>
-        <div className='col-md-6'>
-          <Carousel interval={3000}>
-            <Carousel.Item>
-              <div className='card_container'>
-                <img
-                  src={como1}
-                  alt='Descripción de la imagen 1'
-                  className='carousel-image'
-                />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className='card_container'>
-                <img
-                  src={comu2}
-                  alt='Descripción de la imagen 2'
-                  className='carousel-image'
-                />
-              </div>
-            </Carousel.Item>
-            <Carousel.Item>
-              <div className='card_container'>
-                <img
-                  src={como3}
-                  alt='Descripción de la imagen 3'
-                  className='carousel-image'
-                />
-              </div>
-            </Carousel.Item>
-          </Carousel>
+        <div className='animal'>
+          <img src={anima2} alt='Animal 2' />
+          <div className='animal-info'>
+            <img src={user2} alt='Avatar 2' />
+            <div className='nombre-localidad'>
+              <div className='nombre'>Juan C.</div>
+              <div className='localidad'>Quinta Normal</div>
+            </div>
+          </div>
+          <p>Descripción de Persona 2</p>
+        </div>
+        <div className='animal'>
+          <img src={anima3} alt='Animal 3' />
+          <div className='animal-info'>
+            <img src={user3} alt='Avatar 3' />
+            <div className='nombre-localidad'>
+              <div className='nombre'>Carlos E.</div>
+              <div className='localidad'>Templo Bahai</div>
+            </div>
+          </div>
+          <p>Descripción de Persona 3</p>
         </div>
       </div>
+      <div className='section-divider'></div>
     </div>
   );
-};
+}
 
 export default Comunidad;
