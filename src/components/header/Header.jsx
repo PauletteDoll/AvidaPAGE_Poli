@@ -9,16 +9,6 @@ import { Link } from 'react-router-dom';
 import logoImage from '../../assets/img/Avida.png';
 
 const Header = () => {
-  const [showLoginModal, setShowLoginModal] = useState(false);
-
-  const handleShowLoginModal = () => {
-    setShowLoginModal(true);
-  };
-
-  const handleCloseLoginModal = () => {
-    setShowLoginModal(false);
-  };
-
   return (
     <div>
       <Navbar collapseOnSelect expand='lg' className='bg-green fixed-top'>
@@ -46,12 +36,13 @@ const Header = () => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <Nav.Link onClick={handleShowLoginModal}>Mi Cuenta</Nav.Link>
+              <Nav.Link as={Link} to='/login'>
+                Mi Cuenta
+              </Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>
-      <Modal show={showLoginModal} onHide={handleCloseLoginModal}></Modal>
     </div>
   );
 };
