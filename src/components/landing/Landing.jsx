@@ -10,6 +10,7 @@ import Rutaje from "../../components/rutaje/Rutaje";
 import Guia from "../../components/guia/Guia";
 import Tienda from "../../components/tienda/Tienda";
 import Footer from "../Footer/Footer";
+import Ecommerce from "../tienda/Ecommerce";
 
 function Landing() {
   return (
