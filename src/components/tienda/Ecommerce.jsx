@@ -1,9 +1,15 @@
 import React, { useState } from "react";
 import { Container, Card, Button } from "react-bootstrap";
-import fototaza from "./imgecommerce/producto1.jpg";
 import "./ecommerce.css";
 import Header from "../../components/header/Header";
 import Footer from "../Footer/Footer";
+import producto1 from "./imgecommerce/producto1.png";
+import producto2 from "./imgecommerce/producto2.png";
+import producto3 from "./imgecommerce/producto3.png";
+import producto4 from "./imgecommerce/producto4.png";
+import producto5 from "./imgecommerce/producto5.png";
+import producto6 from "./imgecommerce/producto6.png";
+import producto7 from "./imgecommerce/producto7.png";
 
 const ProductList = () => {
   const [cart, setCart] = useState([]);
@@ -17,18 +23,13 @@ const ProductList = () => {
   };
 
   const products = [
-    { id: 1, name: "Taza", price: 5000 },
-    { id: 2, name: "Taza2", price: 5000 },
-    { id: 3, name: "Taza3", price: 5000 },
-    { id: 4, name: "Taza4", price: 5000 },
-    { id: 5, name: "Taza5", price: 5000 },
-    { id: 6, name: "Taza6", price: 5000 },
-    { id: 7, name: "Taza7", price: 5000 },
-    { id: 8, name: "Taza8", price: 5000 },
-    { id: 9, name: "Taza9", price: 5000 },
-    { id: 10, name: "Taza10", price: 5000 },
-    { id: 11, name: "Taza11", price: 5000 },
-    { id: 12, name: "Taza12", price: 5000 },
+    { id: 1, name: "Taza", price: 5000, image: producto1 },
+    { id: 2, name: "Taza2", price: 5000, image: producto2 },
+    { id: 3, name: "Taza3", price: 5000, image: producto3 },
+    { id: 1, name: "Taza", price: 5000, image: producto4 },
+    { id: 2, name: "Taza2", price: 5000, image: producto5 },
+    { id: 3, name: "Taza3", price: 5000, image: producto6 },
+    { id: 3, name: "Taza3", price: 5000, image: producto7 },
   ];
 
   return (
